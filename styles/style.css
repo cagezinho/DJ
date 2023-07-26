@@ -571,26 +571,42 @@ textarea {
 }
 
 @media (max-width: 1390px) {
+    @keyframes abrirMenu {
+        from {
+          transform: translateX(200px);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+      
     body {
         overflow-x: hidden;
     }
 
+    #logo {
+        margin-left: 30px;
+    }
+
+    header {
+        padding: 0px;
+    }
+
     .listaLinkNav {
         position: absolute;
-        top: 10vh;
-        right: 0;
-        width: 50vw;
+        top: 100px;
         height: 60vh;
         background-color: rgba(0, 0, 0, 0.950);
         flex-direction: column;
         justify-content: space-around;
-        transform: translateX(110%);
+        display: none;
         transition: transform 0.3s ease-in;
         border-radius: 0 0 0 60px;
     }
 
     .listaLinkNav.active {
-        transform: translateX(0);
+        display: flex;
+        animation: abrirMenu 0.5s;
     }
 
     .linkNavSelecionado {
@@ -599,6 +615,7 @@ textarea {
 
     .mobileMenu {
         display: block;
+        margin-right: 35px;
     }
 
     .whatsapp-button {

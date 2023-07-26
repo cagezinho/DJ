@@ -573,10 +573,10 @@ textarea {
 @media (max-width: 1390px) {
     @keyframes abrirMenu {
         from {
-          transform: translateX(200px);
+          transform: translateY(-200px);
         }
         to {
-          transform: translateX(0);
+          transform: translateY(0);
         }
       }
       

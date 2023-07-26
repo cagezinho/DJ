@@ -595,13 +595,13 @@ textarea {
     .listaLinkNav {
         position: absolute;
         top: 100px;
-        height: 60vh;
+        height: 45vh;
         background-color: rgba(0, 0, 0, 0.950);
         flex-direction: column;
         justify-content: space-around;
         display: none;
         transition: transform 0.3s ease-in;
-        border-radius: 0 0 0 60px;
+        border-radius: 60px 0 0 60px;
     }
 
     .listaLinkNav.active {
@@ -621,8 +621,12 @@ textarea {
     .whatsapp-button {
         position: absolute;
         left: 0;
-        top: 350px;
+        top: 300px;
         border-radius: 0 30px 30px 0;
+    }
+
+    .nomeEmpresa {
+        font-size: 27pt;
     }
 
     .container {
@@ -636,7 +640,7 @@ textarea {
     }
 
     .subTitulo-sec {
-        font-size: 30pt;
+        font-size: 28pt;
     }
 
     .footer {

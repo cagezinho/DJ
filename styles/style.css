@@ -1,0 +1,671 @@
+:root {
+    --font: 'Inter', sans-serif;
+    --laranja-principal:#FC8537 ;
+}
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+#imgFundo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 64px;
+    height: 110px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 110px;
+}
+
+.mobileMenu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobileMenu div {
+    width: 32px;
+    height: 2px;
+    background: #FC8537;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.mobileMenu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobileMenu.active .line2 {
+    opacity: 0;
+}
+
+.mobileMenu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+#logo {
+    height: 70px;
+}
+
+.listaLinkNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.linkNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 39.73px;
+    padding: 8px 41.5px;
+    gap: 10px;
+    border-radius: 2px;
+    color: #FFF;
+    font-family: var(--font);
+    font-size: 17pt;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+.linkNavSelecionado {
+    border: 2px solid #D96C0D;
+}
+
+.linkNavImg {
+    width: 22px;
+    height: 19.73px;
+}
+
+.main {
+    height: 100%;
+    width: auto;
+}
+
+/* Estilos do botão do WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    top: 230px;
+    right: 0px;
+    z-index: 999;
+    background-color: #FC8537;
+    border-radius: 30px 0 0 30px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .whatsapp-button img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+  
+
+.nomeEmpresa {
+    color: white;
+    font-size: 50px;
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 100px;
+}
+
+.card {
+    width: 400px;
+    height: 550px;
+    box-shadow: 0px 0px 8px 7px rgba(0, 0, 0, 0.315);
+}
+
+.cardImg {
+    width: 100%;
+    margin: -4px 0;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cardDescricao {
+    background-color: #D96C0D;
+    height: 180px;
+    border-radius: 0px 0px 5px 5px;
+    padding: 8px;
+}
+
+.cardTitulo {
+    color: black;
+    font-family: var(--font);
+    font-size: 15pt;
+    text-align: center;
+    line-height: normal;
+    padding: 5px 5px 0px 10px;
+    margin-bottom: 4px;
+}
+
+.cardParagrafo {
+    color: black;
+    font-family: var(--font);
+    font-size: 14pt;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+}
+
+.subTitulo-sec {
+    color: white;
+    font-size: 50px;
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    text-decoration: underline var(--laranja-principal) 5px;
+    text-underline-offset: 10px;
+}
+
+.itens-sec {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item-sec {
+    width: 300px;
+    height: 300px;
+}
+
+.h3-sec {
+    color: white;
+    font-size: 27px;
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    text-decoration: underline #fc8637c6 2px;
+    text-underline-offset: 10px;
+}
+
+.p-sec {
+    color: #e0e0e0;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer {
+    height: 500px;
+    width: 100%;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 10px 12px 60px 10px rgb(0, 0, 0);
+}
+
+.footer-left {
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 3px solid rgb(122, 122, 122);
+}
+
+.footer-logo {
+    height: 100px;
+}
+
+.h4-footer {
+    color: #e0e0e0;
+    font-family: var(--font);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 400px;
+}
+
+.footer-mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-mid-link {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    gap: 15px;
+}
+
+.footer-rigth-link {
+    color: white;
+    font-size: 16px;
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: underline #fc8637c6 2px;
+    text-underline-offset: 10px;
+}
+
+.footer-rigth-p {
+    color: #777777;
+    font-family: var(--font);
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 18px;
+}
+
+.h5-footer-rigth {
+    margin-top: 15px;
+    color: #a7a7a7;
+    font-size: 19px;
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer-sec {
+    border-top: 1px solid rgb(90, 90, 90);
+    background-color: #131313;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.h6-footer-sec {
+    color: #585858;
+    font-family: var(--font);
+    font-size: 14px;
+}
+
+.link-footer-sec {
+    text-decoration: none;
+    color: rgb(185, 185, 185);
+}
+
+/* ----------------------------------------------------------------------------- ABOUT ME ------------------------------------------------------------------------------------------------- */
+
+#aboutme {
+    background-image: url(../img/Rectangle\ 5.png);
+    background-size: cover;
+}
+
+.aboutTitulo {
+    color: white;
+    font-size: 50px;
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    text-decoration: underline var(--laranja-principal) 5px;
+    text-underline-offset: 10px;
+}
+
+.aboutTexto {
+    background-color: var(--laranja-principal);
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.aboutImg {
+    height: auto;
+    margin-left: 20px;
+}
+
+.aboutParagrafo {
+    text-align: justify;
+    font-family: var(--font);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    padding: 20px;
+}
+
+
+.aboutSubTitulo {
+    font-family: var(--font);
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    padding: 20px;
+}
+
+.mvv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.mvvItem {
+    margin: 100px 0;
+    width: 450px;
+    height: auto;
+}
+
+.mvvItem h4 {
+    color: #ffffff;
+    font-family: var(--font);
+    font-size: 23pt;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 15px;
+    text-decoration: underline var(--laranja-principal) 2px;
+    text-underline-offset: 8px;
+}
+
+.mvvItem p {
+    color: #e0e0e0;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* ------------------------------------------------------------------------------- FALE CONOSCO ------------------------------------------------------------------------------------------- */
+
+.faleConosco {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.formContato {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+}
+
+.formContato h3 {
+    color: white;
+    text-align: center;
+    font-family: var(--font);
+    font-size: 21pt;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.nome, .email {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.nome label, .email label {
+    background-color: var(--laranja-principal);
+    width: 83px;
+    height: 50px;
+    color: black;
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+}
+
+.nome input, .email input {
+    width: 300px;
+    background-color: white;
+    height: 50px;
+    border-radius: 0 10px 10px 0;
+    padding-left: 10px;
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textarea label {
+    background-color: var(--laranja-principal);;
+    width: 100%;
+    height: 50px;
+    color: black;
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+
+textarea {
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+    color: black;
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    resize: none;
+}
+
+#enviar {
+    width: 100%;
+    background-color: var(--laranja-principal);
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 18px;
+    color: black;
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.local {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.local h3 {
+    color: white;
+    text-align: center;
+    font-family: var(--font);
+    font-size: 21pt;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.mapa {
+    background-color: var(--laranja-principal);
+    width: 418px;
+    height: 322px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapa iframe {
+    width: 420px;
+    height: 320px;
+}
+
+.infoLocal {
+    color: white;
+    font-family: var(--font);
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 27px;
+}
+
+@media (max-width: 1390px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .listaLinkNav {
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 50vw;
+        height: 60vh;
+        background-color: rgba(0, 0, 0, 0.950);
+        flex-direction: column;
+        justify-content: space-around;
+        transform: translateX(110%);
+        transition: transform 0.3s ease-in;
+        border-radius: 0 0 0 60px;
+    }
+
+    .listaLinkNav.active {
+        transform: translateX(0);
+    }
+
+    .linkNavSelecionado {
+        border: none;
+    }
+
+    .mobileMenu {
+        display: block;
+    }
+
+    .whatsapp-button {
+        position: absolute;
+        left: 0;
+        top: 350px;
+        border-radius: 0 30px 30px 0;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        width: 95%;
+        margin: auto;
+    }
+
+    .segunda-sec {
+        flex-wrap: wrap;
+    }
+
+    .subTitulo-sec {
+        font-size: 30pt;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer-left {
+        width: 90%;
+        border: none;
+    }
+
+    .footer-logo {
+        height: 80px;
+    }
+
+    .h4-footer {
+        font-size: 18pt;
+    }
+
+    .footer-mid {
+        align-items: center;
+        margin: 20px;
+    }
+
+    .footer-rigth {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .footer-sec {
+        flex-wrap: wrap;
+    }
+
+    .h6-footer-sec {
+        text-align: center;
+        margin: 5px 0;
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    } 
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

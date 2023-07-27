@@ -161,7 +161,7 @@ nav {
 }
 
 .cardDescricao {
-    background-color: #D96C0D;
+    background-color: var(--laranja-principal);
     height: 180px;
     border-radius: 0px 0px 5px 5px;
     padding: 8px;

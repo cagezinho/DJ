@@ -112,13 +112,14 @@ nav {
     top: 230px;
     right: 0px;
     z-index: 999;
-    background-color: #FC8537;
+    background-color: #ff781e;
     border-radius: 30px 0 0 30px;
-    width: 60px;
+    width: 55px;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.541);
   }
   
   .whatsapp-button img {
@@ -547,17 +548,17 @@ textarea {
 
 .mapa {
     background-color: var(--laranja-principal);
-    width: 418px;
-    height: 322px;
-    padding: 8px;
+    width: 400px;
+    height: 400px;
+    padding: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .mapa iframe {
-    width: 420px;
-    height: 320px;
+    width: 400px;
+    height: 400px;
 }
 
 .infoLocal {
@@ -678,6 +679,57 @@ textarea {
         text-align: center;
         margin: 5px 0;
     }
+
+    /* ------------------------------------ ABOUTME ------------------------------------------------ */
+
+    .aboutTitulo {
+        font-size: 28pt;
+    }
+
+    .aboutTexto {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .aboutImg {
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    .mvv {
+        flex-direction: column;
+    }
+
+    .mvvItem {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    /* --------------------------------- CONTATO ---------------------------- */
+
+    #mainContato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .faleConosco {
+        flex-direction: column;
+    }
+
+    .formContato {
+        margin-bottom: 60px;
+    }
+
+    .nome, .email, .textarea, #enviar {
+        width: 85%;
+    }
+
+    textarea {
+        width: 94%;
+    }
+
 }
 
 @keyframes navLinkFade {
